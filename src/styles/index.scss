@@ -14,13 +14,8 @@
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
@@ -39,7 +34,7 @@ html {
 #root {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 100vh;
 }
 
 
@@ -71,29 +66,7 @@ html {
 
 
 
-.input-remember {
-  display: flex;
-}
 
-.input-remember label {
-  margin-left: 0.25rem;
-}
-
-.input-wrapper {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin-bottom: 1rem;
-}
-
-.input-wrapper label {
-  font-weight: bold;
-}
-
-.input-wrapper input {
-  padding: 5px;
-  font-size: 1.2rem;
-}
 
 .account {
   display: flex;
