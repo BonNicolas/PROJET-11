@@ -1,8 +1,4 @@
 .main-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 20px;
 
     & a {
         font-weight: bold;
@@ -17,7 +13,9 @@
     &__item {
         text-decoration: none;
         margin-right: 0.5rem;
+    }
 
+    &__deco {
         &:hover {
             text-decoration: underline;
         }
@@ -25,15 +23,11 @@
 
     &__icon {
         margin-right: 5px;
-    }
 
-    &__logo {
-        display: flex;
-        align-items: center;
+        &--signout {
+            margin-right: 15px;
+            margin-left: 15px;
 
-        & img {
-            max-width: 100%;
-            width: 200px;
         }
 
     }
