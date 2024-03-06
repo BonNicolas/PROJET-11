@@ -75,7 +75,7 @@ function Login() {
                   <input type="checkbox" id="remember-me" />
                   <label htmlFor="remember-me">Remember me</label>
                </div>
-               <button className='login__button' type="submit">Sign In</button>
+               <button className='button button--login' type="submit">Sign In</button>
             </form>
         </section>
     )
