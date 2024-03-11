@@ -35,7 +35,6 @@ function User() {
    const token = useSelector((state) => state.auth.token);
    const navigate = useNavigate();
 
-   // Si l'utilisateur n'est pas connecté, redirection vers la page de connexion
    useEffect(() => {
       if (!token) {
          navigate("/signin");

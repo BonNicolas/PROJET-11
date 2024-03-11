@@ -37,19 +37,19 @@ function Login() {
       const data = await response.json();
       console.log(data);
 
-      if (data.status !== 200) { // Gestion des erreurs
+      if (data.status !== 200) {
          setError(true);
          return;
       }
 
-      dispatch({ // Enregistrement du token dans le store
+      dispatch({ 
          type: 'LOGIN',
          payload: {token: data.body.token,}
       });
       navigate("/user");
    };
 
-    // Si l'utilisateur est déjà connecté, on le redirige vers la page user
+   
     useEffect(() => {
        if (token) {
           navigate("/user");
