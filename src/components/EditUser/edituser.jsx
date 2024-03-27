@@ -12,7 +12,7 @@ function EditUser() {
    const lastname = useSelector((state) => state.name.lastname);
 
    const [showForm, setShowForm] = useState(false);
-   const [newUsername, setNewUsername] = useState('');
+   const [newUsername, setNewUsername] = useState(user);
 
    const toggleForm = () => {
       setShowForm(!showForm);
@@ -54,7 +54,7 @@ function EditUser() {
       } catch (error) {
          console.error('Erreur lors de la requête :', error);
       }
-      setNewUsername('');
+      setNewUsername(newUsername);
       setShowForm(false);
    };
 

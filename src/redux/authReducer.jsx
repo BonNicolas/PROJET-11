@@ -1,20 +1,24 @@
+const storedToken = localStorage.getItem('token');
+
+
 const initialState = {
-    token: ''
- };
+   token: storedToken ? storedToken : ''
+};
+
+const authReducer = (state = initialState, action) => {
+   switch (action.type) { 
+      case 'LOGIN':
+         localStorage.setItem('token', action.payload.token);
+         return {
+            ...state,
+            token: action.payload.token
+         };
+      case 'LOGOUT':
+         localStorage.removeItem('token');
+         return { token: '' };
+      default:
+         return state;
+   }
+};
  
- const authReducer = (state = initialState, action) => {
-    switch (action.type) { 
-       case 'LOGIN':
-          return {
-             ...state,
-             token: action.payload.token
-          };
-       case 'LOGOUT':
-          return initialState;
-       default:
-          return state;
-    }
- };
-  
- export default authReducer;
-  
+export default authReducer;

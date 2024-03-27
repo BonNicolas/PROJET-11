@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import EditUser from '../../components/EditUser/edituser';
 import Account from '../../components/Account/account';
 
-const InfosAccount = [
+const InfosAccounts = [
 
    { 
        id : "1",
@@ -44,7 +44,7 @@ function User() {
    return (
       <main className="main main--bg-dark">
         <EditUser />
-        {InfosAccount.map((props => {
+        {InfosAccounts.map((props => {
          return(
             <Account key={props.id}
             title={props.title}
