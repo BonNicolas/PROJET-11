@@ -1,8 +1,8 @@
 import Banner from '../../components/Banner/banner';
 import Card from '../../components/Card/card';
-import IconChat from '../../assets/icon-chat.png';
-import IconMoney from '../../assets/icon-money.png';
-import iconSecurity from '../../assets/icon-security.png';
+import IconChat from '../../assets/icon-chat.webp';
+import IconMoney from '../../assets/icon-money.webp';
+import iconSecurity from '../../assets/icon-security.webp';
 
 const CardContent = [
 
