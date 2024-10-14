@@ -46,7 +46,6 @@ function EditUser() {
             },
          });
 
-         
          } else {
          console.error('Erreur lors de l envoi du nouveau nom d utilisateur');
          }
@@ -54,7 +53,6 @@ function EditUser() {
       } catch (error) {
          console.error('Erreur lors de la requête :', error);
       }
-      setNewUsername(newUsername);
       setShowForm(false);
    };
 
